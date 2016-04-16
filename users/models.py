@@ -1,12 +1,7 @@
 from django.db import models
 import time
-from pygments.lexers import get_all_lexers
-from pygments.styles import get_all_styles
 from django.core.validators import RegexValidator
 
-from pygments.lexers import get_lexer_by_name
-from pygments.formatters.html import HtmlFormatter
-from pygments import highlight
 import random
 from random import randint
 

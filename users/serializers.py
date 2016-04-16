@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from users.models import Users, LANGUAGE_CHOICES, STYLE_CHOICES
+from users.models import Users
 import random
 from random import randint
 import json
