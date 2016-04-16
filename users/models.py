@@ -5,10 +5,6 @@ from django.core.validators import RegexValidator
 import random
 from random import randint
 
-LEXERS = [item for item in get_all_lexers() if item[1]]
-LANGUAGE_CHOICES = sorted([(item[1][0], item[0]) for item in LEXERS])
-STYLE_CHOICES = sorted((item, item) for item in get_all_styles())
-
 owner = models.ForeignKey('auth.User', related_name='register')
 highlighted = models.TextField()
 
