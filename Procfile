@@ -1,0 +1,1 @@
+web: gunicorn bitjiniwebsiteapp.wsgi --log-file -
