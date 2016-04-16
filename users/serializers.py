@@ -17,6 +17,10 @@ class UsersSerializer(serializers.ModelSerializer):
         """
         Create and return a new `Snippet` instance, given the validated data.
         """
+        import logging
+
+        app.logger.addHandler(logging.StreamHandler(sys.stdout))
+        app.logger.setLevel(logging.ERROR)
         
         objects=Users.objects.create(name=validated_data.get('name'),email=validated_data.get('email'),phone=validated_data.get('phone'),address=validated_data.get('address'),project_description=validated_data.get('project_description'),doamin=validated_data.get('domain'))
         # print >> sys.stderr, objects
