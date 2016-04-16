@@ -24,6 +24,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'rest_framework',
+    'users',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -62,10 +64,10 @@ WSGI_APPLICATION = 'bitjiniwebsiteapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': '',                      
-        'USER': '',
-        'PASSWORD': '',
-        'HOST': '',
+        'NAME': 'dkn48cnl8cr4s',                      
+        'USER': 'drukavmazrgubs',
+        'PASSWORD': '8y_mdB1CqSg-Zx0j_mdtBDOyzx',
+        'HOST': 'ec2-23-21-42-29.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
