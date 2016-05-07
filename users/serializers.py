@@ -31,10 +31,15 @@ class UsersSerializer(serializers.ModelSerializer):
         #     domain="Growth Hacking"
         
         msg1="Thank You for contacting Bitjini. We will get back to you soon."
-        msg2=validated_data.get('name')+" with email "+validated_data.get('email')+" and phone "+validated_data.get('phone')+" has contacted Bitjini."
+
+        if(validated_data.get('project_description') == ''):
+            msg2=validated_data.get('name')+" with email "+validated_data.get('email')+" and phone "+validated_data.get('phone')+" has contacted Bitjini. The domain select is "+validated_data.get('domain')
+        else:
+            msg2=validated_data.get('name')+" with email "+validated_data.get('email')+" and phone "+validated_data.get('phone')+" has contacted Bitjini. The project description is "+validated_data.get('project_description')+" and the domain selected is "+validated_data.get('domain')
+        
 
         from django.core.mail import send_mail
-        send_mail('Bitjini: ',msg1, 'poojapauskar22@gmail.com', [validated_data.get('email')], fail_silently=False)
+        send_mail('Bitjini: ',msg2, 'poojapauskar22@gmail.com', [validated_data.get('email')], fail_silently=False)
 
 
         from django.core.mail import send_mail
