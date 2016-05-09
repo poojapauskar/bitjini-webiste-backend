@@ -54,11 +54,11 @@ class UsersSerializer(serializers.ModelSerializer):
 
         if(validated_data.get('email') != ''):
             from django.core.mail import send_mail
-            send_mail('Bitjini: ',msg1, 'poojapauskar22@gmail.com', [validated_data.get('email')], fail_silently=False)
+            send_mail('Bitjini: Thank You ',msg1, 'noreply@bitjini.com', [validated_data.get('email')], fail_silently=False)
 
 
         from django.core.mail import send_mail
-        send_mail('Bitjini: ',msg2, 'poojapauskar22@gmail.com', ['contact@bitjini.com'], fail_silently=False)
+        send_mail('Bitjini: Alert ',msg2, 'noreply@bitjini.com', ['contact@bitjini.com'], fail_silently=False)
 
 
 

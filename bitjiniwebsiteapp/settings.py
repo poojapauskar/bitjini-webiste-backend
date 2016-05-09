@@ -10,8 +10,8 @@ STATICFILES_DIRS = (
 
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'poojapauskar22'
-EMAIL_HOST_PASSWORD = 'qwerty22222'
+EMAIL_HOST_USER = 'noreply@bitjini.com'
+EMAIL_HOST_PASSWORD = 'touchmenot'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
