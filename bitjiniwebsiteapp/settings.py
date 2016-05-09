@@ -9,7 +9,7 @@ STATICFILES_DIRS = (
 )
 
 
-EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST = 'smtp.bitjini.com'
 EMAIL_HOST_USER = 'noreply@bitjini.com'
 EMAIL_HOST_PASSWORD = 'touchmenot'
 EMAIL_PORT = 587
